@@ -29,9 +29,12 @@ export class PokemonListComponent implements OnInit {
   ionViewDidLoad(){
 
     this.pokemonService.getPokemons().subscribe(data => {
-     
+      this.pokemons = data
+
+      console.log(this.pokemons)
     })
    
      
    }
 }
+
