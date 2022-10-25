@@ -14,8 +14,8 @@ export class PokemonService {
         console.log("hola proveedor")
     }
 
-   getPokemons() : Observable <pokemon[]>{
-    return this.http.get<pokemon[]>(this.baseUrl)
+   getPokemons() : Observable <pokemon>{
+    return this.http.get<pokemon>(this.baseUrl)
    }
     
 }

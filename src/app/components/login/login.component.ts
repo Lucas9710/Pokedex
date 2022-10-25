@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
     this.userService.login(this.formLogin.value)
       .then(response => {
         console.log("entro bien el usuario" + response);
+        this.router.navigate(['/pokemonList']);
       })
       .catch(error => console.log("fallo elingreso" +error));
   }
@@ -35,7 +36,7 @@ export class LoginComponent implements OnInit {
     this.userService.loginWithGoogle()
       .then(response => {
         console.log(response);
-        this.router.navigate(['/main']);
+        this.router.navigate(['/pokemonList']);
       })
       .catch(error => console.log(error))
   }

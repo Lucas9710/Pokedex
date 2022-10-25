@@ -1,15 +1,16 @@
-<table class="table">
-    <thead>
-      <tr>
-        <th scope="name">name</th>
-       
-      </tr>
-    </thead>
-    <tbody>
-    
-      <tr *ngFor="let pokemon of pokemons">
-        <th>{{pokemon.results}}</th>
-      
-      </tr>
-    </tbody>
-  </table>
+
+
+  <h1>Página principal</h1>
+  <button style="background-color: red"  (click)="onClick()" class="btn btn-outline-danger mt-5">Logout</button>
+<table>
+  <thead>
+    <tr>
+      <th scope="name">name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pokemon of pokemons.results">
+      <th>{{pokemon.name}}</th>
+  </tbody>
+</table>
+
