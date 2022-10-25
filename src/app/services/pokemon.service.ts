@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { pokemon, PokemonList } from "../models/pokemon.list";
 import { PokemonDetail } from "../models/pokemon.detail";
 
-import { map } from "rxjs/operators";
+
 
 @Injectable({providedIn: 'root'})
 export class PokemonService {
@@ -14,8 +14,8 @@ export class PokemonService {
         console.log("hola proveedor")
     }
 
-   getPokemons() : Observable <pokemon>{
-    return this.http.get<pokemon>(this.baseUrl)
+   getPokemons() : Observable <pokemon[]>{
+    return this.http.get<pokemon[]>(this.baseUrl)
    }
     
 }

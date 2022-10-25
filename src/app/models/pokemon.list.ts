@@ -1,10 +1,10 @@
-export interface PokemonList {
-    name: string;
-    url: string;
+export class PokemonList {
+   public name: string;
+   public  url: string;
 
    
 }
 
-export interface pokemon {
-    results: PokemonList;
+export  class pokemon {
+ public results: PokemonList[];
 }
