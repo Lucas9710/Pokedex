@@ -7,7 +7,7 @@ import { canActivate, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
 import { PokemonListComponent } from './components/pokemons/pokemon-list/pokemon-list.component';
 import { PokemonDetailComponent } from './components/pokemons/pokemon-detail/pokemon-detail.component';
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: '/main' },
+
   {
     path: 'main',
     component: MainComponent,
